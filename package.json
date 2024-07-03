@@ -1,0 +1,26 @@
+{
+  "name": "monitor",
+  "version": "1.0.0",
+  "description": "monitor demo",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:vue-ui": "pnpm --filter @monitor/vue-ui run build"
+  },
+  "keywords": [
+    "monitor"
+  ],
+  "author": "yuanbo",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "sass": "^1.77.6",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "vue": "^3.4.31"
+  }
+}

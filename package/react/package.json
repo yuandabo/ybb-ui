@@ -1,0 +1,24 @@
+{
+  "name": "@monitor/react",
+  "version": "1.0.0",
+  "description": "monitor react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "@monitor"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "author": "yuanbo",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=16.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
