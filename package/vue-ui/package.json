@@ -2,7 +2,15 @@
   "name": "@monitor/vue-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/vue-ui.umd.js",
+  "module": "./dist/vue-ui.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/vue-ui.umd.js",
+      "module": "./dist/vue-ui.mjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build"

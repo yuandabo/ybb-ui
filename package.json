@@ -6,7 +6,12 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:vue-ui": "pnpm --filter @monitor/vue-ui run build"
+    "build:vue-ui": "pnpm run type:src && pnpm --filter @monitor/vue-ui run build && pnpm run mv-type",
+    "dev:example": "pnpm --filter @monitor/example run dev",
+    "type:node": "tsc -p tsconfig.node.json --noEmit --composite false",
+    "clean:type": "rimraf ./dist",
+    "type:src": "pnpm run clean:type && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
+    "mv-type": "tsx ./scripts/dts-mv.ts"
   },
   "keywords": [
     "monitor"
@@ -14,10 +19,18 @@
   "author": "yuanbo",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
     "@vitejs/plugin-vue": "^5.0.5",
+    "eslint": "^9.6.0",
+    "rimraf": "^5.0.7",
     "sass": "^1.77.6",
+    "tsx": "^4.16.2",
     "typescript": "^5.5.3",
-    "vite": "^5.3.3"
+    "vite": "^5.3.3",
+    "vue-eslint-parser": "^9.4.3",
+    "vue-tsc": "^2.0.24"
   },
   "dependencies": {
     "react": "^18.3.1",

@@ -1,0 +1,12 @@
+{
+  "name": "@monitor/example",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev"
+  },
+  "dependencies": {
+    "@monitor/vue-ui": "workspace:^"
+  },
+  "devDependencies": {
+  }
+}

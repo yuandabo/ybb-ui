@@ -22,7 +22,11 @@ export default defineConfig({
     // 为了方便学习，查看构建产物，将此置为 false，不要混淆产物代码
     minify: false,
     rollupOptions: {
-
-    }
+      external: [
+        // 除了 @monitor/shared，未来可能还会依赖其他内部模块，不如用正则表达式将 @openxui 开头的依赖项一起处理掉
+        /@monitor.*/, 
+        'vue'
+      ],
+    },
   }
 })
