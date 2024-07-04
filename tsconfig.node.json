@@ -1,4 +1,3 @@
-// tsconfig.node.json
 {
     // 继承基础配置
     "extends": "./tsconfig.base.json",
