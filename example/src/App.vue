@@ -1,8 +1,8 @@
 <script setup lang="ts">
 // demo/src/App.vue
 import {
-  Button
-} from '@monitor/vue-ui'
+  Button,
+} from '@monitor/vue-ui';
 </script>
 
 <template>

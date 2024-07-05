@@ -1,5 +1,5 @@
 // packages/shared/vite.config.ts
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   build: {
@@ -22,15 +22,15 @@ export default defineConfig({
     // 为了方便学习，查看构建产物，将此置为 false，不要混淆产物代码
     minify: false,
     rollupOptions: {
-        external: [/lodash.*/],
-        output: {
-            // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量。即使不设置，构建工具也会为我们自动生成。个人倾向于不设置
-            /*
+      external: [/lodash.*/],
+      output: {
+        // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量。即使不设置，构建工具也会为我们自动生成。个人倾向于不设置
+        /*
             globals: {
               lodash: 'lodash'
             }
             */
-          }
-    }
-  }
-})
+      },
+    },
+  },
+});

@@ -14,8 +14,11 @@ function clickHandler() {
 </script>
 
 <template>
-  <button class="openx-button" @click="clickHandler">
-    <slot></slot>
+  <button
+    class="openx-button"
+    @click="clickHandler"
+  >
+    <slot />
   </button>
 </template>
 
@@ -39,4 +42,3 @@ function clickHandler() {
   background-color: #e9ecef;
 }
 </style>
-
