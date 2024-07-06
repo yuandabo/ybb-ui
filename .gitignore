@@ -2,3 +2,9 @@ node_modules
 **/es
 **/lib
 dist
+!.eslintrc.js
+!.stylelintrc.js
+!.prettierrc.js
+!.lintstagedrc.js
+!.commitlintrc.js
+husky
