@@ -14,7 +14,8 @@
     "type:src": "pnpm run clean:type && npx vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
     "mv-type": "tsx ./scripts/dts-mv.ts",
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix ./",
-    "lint:style": "stylelint --fix ./**/*.{css,scss,vue,html}"
+    "lint:style": "stylelint --fix ./**/*.{css,scss,vue,html}",
+    "lint-staged": "lint-staged"
   },
   "keywords": [
     "monitor"
