@@ -20,7 +20,7 @@ function clickHandler() {
 
 <template>
   <button
-    class="openx-button text-blue ml-2px cursor-pointer"
+    class="openx-button text-blue ml-2px"
     @click="clickHandler"
   >
     123
@@ -29,7 +29,7 @@ function clickHandler() {
 </template>
 
 <style lang="scss">
-.testClass {
+.test-class {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -45,6 +45,5 @@ function clickHandler() {
   background-color: #e9ecef;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 </style>

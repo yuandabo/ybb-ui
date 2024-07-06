@@ -19,7 +19,7 @@ module.exports = {
     // 'stylistic/max-line-length': null,
     // syntax rules from stylelint:
     'color-function-notation': 'modern',
-    'selector-max-compound-selectors': 2,
+    // 'selector-max-compound-selectors': 2,
 
     // stylistic rules from @stylistic/stylelint-plugin:
     '@stylistic/color-hex-case': 'lower',

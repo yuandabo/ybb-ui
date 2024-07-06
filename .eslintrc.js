@@ -76,6 +76,7 @@ module.exports = defineConfig({
       rules: {
         'no-console': 'off',
         'import/no-relative-packages': 'off',
+        'no-use-before-define': 'off',
       },
     },
   ],
