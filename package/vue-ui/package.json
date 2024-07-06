@@ -17,7 +17,8 @@
     "build:package": "vite build --mode package",
     "build:full": "vite build --mode full",
     "build:full-min": "vite build --mode full-min",
-    "build": "pnpm run build:package && pnpm run build:full && pnpm run build:full-min"
+    "build:all": "pnpm run build:package && pnpm run build:full && pnpm run build:full-min",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
