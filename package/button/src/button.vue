@@ -22,6 +22,7 @@ function clickHandler() {
     class="openx-button"
     @click="clickHandler"
   >
+    123
     <slot />
   </button>
 </template>
