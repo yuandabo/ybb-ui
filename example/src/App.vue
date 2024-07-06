@@ -3,10 +3,13 @@
 import {
   Button,
 } from '@monitor/vue-ui';
+
 </script>
 
 <template>
   <div>
-    <Button>1111</Button>
+    <Button class="danger-button">
+      1111
+    </Button>
   </div>
 </template>

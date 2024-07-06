@@ -2,12 +2,12 @@
   "name": "@monitor/vue-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/monitor-vue-ui.umd.js",
-  "module": "./dist/monitor-vue-ui.mjs",
+  "main": "./dist/monitor-vue-ui.umd.cjs",
+  "module": "./dist/monitor-vue-ui.js",
   "exports": {
     ".": {
-      "require": "./dist/monitor-vue-ui.umd.js",
-      "import": "./dist/monitor-vue-ui.mjs",
+      "require": "./dist/monitor-vue-ui.umd.cjs",
+      "import": "./dist/monitor-vue-ui.js",
       "types": "./dist/src/index.d.ts"
     }
   },
@@ -20,6 +20,7 @@
     "build:all": "pnpm run build:package && pnpm run build:full && pnpm run build:full-min",
     "build": "vite build"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
