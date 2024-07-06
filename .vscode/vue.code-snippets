@@ -34,6 +34,18 @@
         "}>();"
       ],
       "description": "初始化 vue3 emits 定义"
-    }
+    },
+    "zs": {
+    "prefix": "zs-Function",
+    "body": [
+      "/**",
+      " * @description description...",
+      " * @param { ${1|Boolean,Number,String,Object,Array,*|} } name description...",
+      " * @return { ${2|Boolean,Number,String,Object,Array,*|} } description...",
+      " */",
+      "$0"
+    ],
+    "description": "添加方法注释"
+  }
   }
   

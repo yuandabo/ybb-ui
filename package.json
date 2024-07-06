@@ -7,11 +7,11 @@
   "scripts": {
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:vue-ui": "pnpm run type:src && pnpm --filter @monitor/vue-ui run build && pnpm run mv-type",
+    "build:vue-ui": "pnpm run type:src && pnpm --filter @monitor/vue-ui run build",
     "dev:example": "pnpm --filter @monitor/example run dev",
     "type:node": "tsc -p tsconfig.node.json --noEmit --composite false",
     "clean:type": "rimraf ./dist",
-    "type:src": "pnpm run clean:type && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
+    "type:src": "pnpm run clean:type && npx vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
     "mv-type": "tsx ./scripts/dts-mv.ts",
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix ./",
     "lint:style": "stylelint --fix ./**/*.{css,scss,vue,html}"

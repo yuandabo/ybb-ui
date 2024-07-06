@@ -2,18 +2,22 @@
   "name": "@monitor/vue-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/vue-ui.umd.js",
-  "module": "./dist/vue-ui.mjs",
+  "main": "./dist/monitor-vue-ui.umd.js",
+  "module": "./dist/monitor-vue-ui.mjs",
   "exports": {
     ".": {
-      "require": "./dist/vue-ui.umd.js",
-      "module": "./dist/vue-ui.mjs"
+      "require": "./dist/monitor-vue-ui.umd.js",
+      "import": "./dist/monitor-vue-ui.mjs",
+      "types": "./dist/src/index.d.ts"
     }
   },
-  "types": "./dist/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build"
+    "build:package": "vite build --mode package",
+    "build:full": "vite build --mode full",
+    "build:full-min": "vite build --mode full-min",
+    "build": "pnpm run build:package && pnpm run build:full && pnpm run build:full-min"
   },
   "keywords": [],
   "author": "",

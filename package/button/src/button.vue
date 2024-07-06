@@ -7,7 +7,11 @@ const props = withDefaults(defineProps<{
 }>(), {
   text: 'World',
 });
-
+/**
+ * @description description...
+ * @param { Boolean } name description...
+ * @return { Boolean } description...
+ */
 function clickHandler() {
   hello(props.text);
 }
