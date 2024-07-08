@@ -1,0 +1,22 @@
+{
+  "name": "@monitor/docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev . --host",
+    "build": "vitepress build .",
+    "preview": "vitepress preview . --host"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.3.0"
+  },
+  "dependencies": {
+    "@monitor/vue-ui": "workspace:^"
+  }
+}

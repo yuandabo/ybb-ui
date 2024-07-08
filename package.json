@@ -10,6 +10,7 @@
     "build:vue-ui": "pnpm run type:src && pnpm --filter @monitor/vue-ui run build",
     "build:@vue-ui/button": "pnpm --filter @monitor/button run build",
     "dev:example": "pnpm --filter @monitor/example run dev",
+    "dev:docs": "pnpm --filter @monitor/docs run dev",
     "type:node": "tsc -p tsconfig.node.json --noEmit --composite false",
     "clean:type": "rimraf ./dist",
     "type:src": "pnpm run clean:type && npx vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
