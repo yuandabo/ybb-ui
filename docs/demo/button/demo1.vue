@@ -1,6 +1,6 @@
 <!-- docs/demo/button/demo1.vue -->
 <script setup lang="ts">
-import { ref, reactive } from 'vue';
+// import { ref, reactive } from 'vue';
 import {
   Button,
 } from '@monitor/vue-ui';
